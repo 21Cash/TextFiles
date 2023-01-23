@@ -1,0 +1,2 @@
+To Make CPP Fast Olympic Coding Remember Test Cases Use,
+"tests_file_suffix": "__tests"
