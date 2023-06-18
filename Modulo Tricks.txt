@@ -1,0 +1,19 @@
+In competitive programming problems, sometimes they want answer in the form of (ans)%(10^9+7), this means that the actual answer to a problem lies above the range of 64-bit integer which is not possible to calculate so they want only the remainder left behind your actual answer.
+
+Therefore to tackle with this problem, you just simply learn two basic rules:
+
+1.) (a+b)%m = (a%m+b%m)%m.
+
+2.) (a*b)%m = (a%m*b%m)%m.
+
+so next time when you comes to this situation just apply the rules given above at each step of your calculation.
+
+for ex: to calculate the factorial of a large number N (1<=N<=10^9) modulus (10^9+7)
+
+so the solution is :
+
+fac=1, mod = 10^9+7
+
+for(i=2;i<=N;++i)
+
+fac = (fac%mod*i%mod)%mod
